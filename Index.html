@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teach Learn Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Teach Learn App</h1>
+    
+    <label for="studentName">तुमचं नाव:</label>
+    <input type="text" id="studentName" placeholder="तुमचं पूर्ण नाव लिहा" required />
+
+    <label for="parentNumber">पालकांचा मोबाईल नंबर:</label>
+    <input type="tel" id="parentNumber" placeholder="10 अंकी नंबर" required pattern="[0-9]{10}" />
+
+    <label for="state">तुमचं राज्य निवडा:</label>
+    <select id="state" required>
+      <option value="">राज्य निवडा</option>
+      <option value="Maharashtra">महाराष्ट्र</option>
+      <option value="Gujarat">गुजरात</option>
+      <option value="Karnataka">कर्नाटका</option>
+      <option value="Tamil Nadu">तामिळनाडू</option>
+      <!-- इतर राज्यं येथे टाकू शकतो -->
+    </select>
+
+    <label for="language">भाषा निवडा:</label>
+    <select id="language" required>
+      <option value="">भाषा निवडा</option>
+      <option value="marathi">मराठी</option>
+      <option value="hindi">हिंदी</option>
+      <option value="english">English</option>
+    </select>
+
+    <button onclick="loginUser()">लॉगिन करा</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
