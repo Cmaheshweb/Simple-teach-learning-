@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+label, input, select, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
