@@ -1,0 +1,17 @@
+function loginUser() {
+  const name = document.getElementById('studentName').value;
+  const parent = document.getElementById('parentNumber').value;
+  const state = document.getElementById('state').value;
+  const language = document.getElementById('language').value;
+
+  if (!name || !parent || !state || !language) {
+    alert("कृपया सर्व माहिती भरावी.");
+    return;
+  }
+
+  // पुढच्या पानावर जायचं
+  localStorage.setItem("username", name);
+  localStorage.setItem("state", state);
+  localStorage.setItem("language", language);
+  window.location.href = "course.html"; // पुढचं पेज
+}
